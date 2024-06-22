@@ -64,6 +64,7 @@
                 android:layout_height="match_parent"
                 android:text="@string/texto_resultado"
                 android:paddingTop="40dp"
+                android:textAlignment="center"
                 >
             </TextView>
 
