@@ -22,14 +22,14 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/blue"
+                android:background="@color/green"
                 >
 
                 <ImageButton
                     android:id="@+id/flecha_volver"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/blue"
+                    android:background="@color/green"
                     app:srcCompat="@drawable/arrow_back_white"
                     >
                 </ImageButton>

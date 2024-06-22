@@ -30,7 +30,6 @@ public class ResultadoFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
 
@@ -57,4 +56,5 @@ public class ResultadoFragment extends Fragment {
         });
 
     }
+
 }

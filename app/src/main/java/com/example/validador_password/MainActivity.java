@@ -27,5 +27,11 @@ public class MainActivity extends AppCompatActivity {
         Fragment fragmento = new PantallaPrincipalFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentMain, fragmento).commit();
 
+        mensajeBienvenida();
+    }
+
+    public void mensajeBienvenida() {
+        Toast.makeText(getApplicationContext(),
+                "Hola Bienvenido, escribe una contraseña como indica el texto", Toast.LENGTH_LONG);
     }
 }
