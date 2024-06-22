@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Validador_Password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--
+        10. Extraer los textos al archivo de recursos de textos (strings.xml).
+    -->
+    <string name="titulo_principal">Validador de contraseñas</string>
+    <string name="titulo_resultado">Resultado</string>
+    <string name="texto_boton">VALIDAR CONTRASEÑA</string>
+    <string name="texto_recomendacion">La contraseña debe tener al menos 5 caracteres y una letra mayúscula</string>
+    <string name="texto_resultado">Recuerda que para que la contraseña sea segura debe cumplir con estas características:
+        \n\n > Al menos 5 caracteres
+        \n\n > Al menos una letra mayúscula
+        \n
+        \n\n Otras características que hacen la contraseña más segura:
+        \n\n > Al menos 1 carácter especial (como . , % $)
+        \n\n > Al menos 1 número</string>
 </resources>

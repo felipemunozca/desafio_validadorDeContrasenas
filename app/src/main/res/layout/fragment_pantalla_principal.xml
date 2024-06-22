@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                app:title="@string/titulo_principal"
+                app:titleTextColor="@color/white">
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!--
+            2. La pantalla principal está definida en un fragmento donde el usuario ingresa la
+            contraseña. El diseño de la pantalla es libre, pero debe incluir un campo de texto para
+            ingresar la contraseña, un botón deshabilitado que se habilita cuando se cumplen los
+            criterios y un texto indicando las características que debe tener la contraseña.
+        -->
+        <FrameLayout
+            android:id="@+id/fragmentPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".PantallaPrincipalFragment"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/input_contrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Escribe una contraseña"
+                    android:inputType="textPassword"
+                    android:layout_margin="32dp"
+                    >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_contrasena"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_boton"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    >
+                </Button>
+
+                <TextView
+                    android:id="@+id/recomendacion_contrasena"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="32dp"
+                    android:text="@string/texto_recomendacion"
+                    >
+                </TextView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>
